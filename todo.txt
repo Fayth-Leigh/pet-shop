@@ -1,0 +1,18 @@
+- Contact Us doesnt send mail...Reactivater ajax call once solved
+- Grooming Validation  does not work
+- Extra CSS Styling
+- Media Queries
+- Admin: validation on add appointment and edit appointment?
+- Populate Altered selection on Edit form
+
+# index
+- Main Body Content
+- Add Meta description tag
+- Add mobile icons to store on phones
+
+# About Us Page
+- additional content in overview section
+
+# Code Clean Up
+- Appointment form into a Include.
+
