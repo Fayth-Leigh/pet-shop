@@ -62,16 +62,16 @@ $(document).ready(function(){
     
     <form id='appointmentform' action='processgrooming.php' method='post'>
     <label for='firstname'>First Name:</label><br>
-    <input type='text' id='firstname'name='firstname' size='20' placeholder="Enter First Name" required><br>
+    <input type='text' id='firstname'name='firstname' size='15' placeholder="Enter First Name" required><br>
     
     <label for='lastname'>Last Name:</label><br>
-    <input type='text' id='lastname' name='lastname' size='20' placeholder="Enter Last Name" required><br>
+    <input type='text' id='lastname' name='lastname' size='15' placeholder="Enter Last Name" required><br>
     
     <label for='address'>Address:</label><br>
-    <input type='text' id='address' name='address' size='20' placeholder='Enter Street Address' required><br>
+    <input type='text' id='address' name='address' size='15' placeholder='Enter Street Address' required><br>
    
     <label for='city'>City:</label><br>
-    <input type="text" id='city' name="city" size="20" placeholder='Enter City' required><br>
+    <input type="text" id='city' name="city" size="15" placeholder='Enter City' required><br>
         
     <label for='state'>State:</label><br>
     <input type="text" id='state' name='state' size="2" placeholder='Enter ST' required><br>
@@ -83,7 +83,7 @@ $(document).ready(function(){
     <input type='tel' id='phone' name='phone' size='10' placeholder='Phone Number' required><br>
     
     <label for='email'>Email:</label><br>
-    <input type='email' name='email' id='email' size='20' placeholder="Enter Your Email" required><br>
+    <input type='email' name='email' id='email' size='15' placeholder="Enter Your Email" required><br>
     
     <label for='typeofpet'>Type of Pet:</label><br>
     <select id='typeofpet' name="typeofpet" size="1" required>
@@ -105,13 +105,13 @@ $(document).ready(function(){
         </select><br>
     
     <label for='petname'>Pet's Name:</label><br>
-    <input type='text' id='petname' name='petname' size='20' placeholder='Enter Pets Name' required><br>
+    <input type='text' id='petname' name='petname' size='15' placeholder='Enter Pets Name' required><br>
     
     <label for='altered'>Spayed or Neutered?</label>
     <input type='checkbox' value='Yes' name='altered' id='altered'><br>
     
     <label for='petage'>Pet's Age:</label><br>
-    <input type='text' id='petage' name='petage' size='20' placeholder='Enter Pets Age'><br>
+    <input type='text' id='petage' name='petage' size='15' placeholder='Enter Pets Age'><br>
     
    <br><input id='submit' name="submit" type="submit" value="Submit">
 	   <input name="reset" type="reset" value="Reset Form">

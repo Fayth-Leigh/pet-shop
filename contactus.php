@@ -36,11 +36,11 @@
     <h1>Contact Us</h1>
 <form id='contactform' method='post' action='mailer.php'>
     <label for='firstname'>First Name:</label><br>
-    <input type='text' id='firstname' name='firstname' size='20' placeholder="Enter First Name"><br>
+    <input type='text' id='firstname' name='firstname' size='15' placeholder="Enter First Name"><br>
     <label for='lastname'>Last Name:</label><br>
-    <input type='text' id='lastname' name='lastname' size='20' placeholder="Enter Last Name"><br>
+    <input type='text' id='lastname' name='lastname' size='15' placeholder="Enter Last Name"><br>
     <label for='email'>Email:</label><br>
-    <input type='email' name='email' id='email' size='20' placeholder="Enter Your Email"><br>
+    <input type='email' name='email' id='email' size='15' placeholder="Enter Your Email"><br>
     <label for='message'>Message:</label><br>
     <textarea id='comments' name='comments' cols='20%' rows='5%' placeholder='Comments or Questions'></textarea><br>
     <input id='submit' name="submit" type="submit" value="Submit">
