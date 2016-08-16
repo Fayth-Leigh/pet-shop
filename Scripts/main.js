@@ -1,32 +1,5 @@
 //Some Helper functions
 
-/*function checkLength($text, $min= 1, $max= 10000, $trim= true){
-
-	if ($trim)
-	{
-		$text = trim($text);
-	}
-	if (strlen($text) < $min || strlen($text) > $max)
-	{
-		return false;
-	}
-	return true;
-}
-
-
-function checkTextArea(text, max) {
-	if (!checkLength(text,0,max)) {
-		var numChars = text.length;
-		var chopped = text.substr(0, max);
-		var message = 'You typed ' + numChars + ' characters.\n';
-		message += 'The limit is 100.';
-		message += 'Your entry will be shortened to:\n\n' + chopped;
-		window.alert(message); 
-	}
-}*/
-
-
-
 function reportErrors(errors) {
     var msg = "There were some problems...\n";
     for (var i = 0; i<errors.length; i++) {
@@ -36,13 +9,7 @@ function reportErrors(errors) {
             window.alert(msg);  
 }
 
-/*var options = {
-    beforeSubmit: validate,
-    sucess: window.alert("Your request has been submitted!")
-    }*/
-    
-
-function validate(form) {
+function apptValidate() {
     var reFirstName = /^([A-Za-z']+ )*[A-Za-z']+$/;
     var reLastName = /^([A-Za-z']+ )*[A-Za-z']+$/;
     var reEmail = /^(\w+[\-\.])*\w+@(\w+\.)+[A-Za-z]+$/;
@@ -71,11 +38,11 @@ function validate(form) {
         }
 
    if (!reFirstName.test(firstname)) {
-            errors[errors.length] = 'You must enter a name.';
+            errors[errors.length] = 'You must enter a valid  firstname.';
         }
 
    if (!reLastName.test(lastname)) {
-        errors[errors.length] = 'You must enter a name.';
+        errors[errors.length] = 'You must enter a valid lastname.';
         }
 
     if (!reCity.test(city)) {
@@ -109,6 +76,43 @@ function validate(form) {
     
     return true;
 }
+ 
+ 
+function contactValidate() {
+    var reFirstName = /^([A-Za-z']+ )*[A-Za-z']+$/;
+    var reLastName = /^([A-Za-z']+ )*[A-Za-z']+$/;
+    var reEmail = /^(\w+[\-\.])*\w+@(\w+\.)+[A-Za-z]+$/; 
+      
+    var firstname = $('#firstname').val();
+    var lastname =  $('#lastname').val();
+    var email =  $('#email').val();
+    var text = $('#comments').val();
+    var errors =[];
+   
+  if (!reEmail.test(email)) {
+            errors[errors.length] = 'You must enter a valid email address.';
+        }
+
+   if (!reFirstName.test(firstname)) {
+            errors[errors.length] = 'You must enter a valid firstname.';
+        }
+
+   if (!reLastName.test(lastname)) {
+        errors[errors.length] = 'You must enter a valid lastname.';
+        }
     
+    if (text == ''){
+        errors[errors.length] = 'You must enter a message!';
+    }
+    
+            
+   if (errors.length > 0) {    
+        reportErrors(errors);
+        return false; 
+    } 
+    
+    return true;
+}
+
 
 

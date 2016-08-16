@@ -14,13 +14,14 @@
 <link href='CSS/main.css' rel='stylesheet' type="text/css">
 <script type="text/javascript">
 
-/*$(document).ready(function() {
+$(document).ready(function() {
     $('#submit').click(function(){
     $('#contactform').ajaxForm(function(form){
         window.alert('Thank You for emailing us!')
         });    
     });
-});*/
+});
+
 </script>
 </head>    
 <body> 
@@ -34,7 +35,7 @@
 <!--Contact Us Form-->
 <div id='formcontent'>
     <h1>Contact Us</h1>
-<form id='contactform' method='post' action='mailer.php'>
+<form id='contactform' method='post' action='mailer.php' onsubmit='return contactValidate()'>
     <label for='firstname'>First Name:</label><br>
     <input type='text' id='firstname' name='firstname' size='15' placeholder="Enter First Name"><br>
     <label for='lastname'>Last Name:</label><br>

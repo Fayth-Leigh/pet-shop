@@ -57,7 +57,7 @@ $result = mysqli_query ($connect,$select);
 ?>
 
 <!--Main Content-->
-<div class='maincontent'>This is the Admin Page
+<div class='maincontent'>
     <table id='admintable'>
         <tr>
             <th>Grooming ID</th>
@@ -117,7 +117,7 @@ $result = mysqli_query ($connect,$select);
 <div id='formcontent'>
     <h1>Add Appointment</h1>
     
-<form id='addappointmentform' action='processgrooming.php' method='post'>
+<form id='addappointmentform' action='processgrooming.php' method='post' onsubmit='return apptValidate()'>
     <label for='firstname'>First Name:</label><br>
     <input type='text' id='firstname'name='firstname' size='15' placeholder="Enter First Name" required><br>
     

@@ -60,7 +60,7 @@ $(document).ready(function(){
 <section id='apptformcontent'>
     <h1>Pet Grooming Appointment</h1>
     
-    <form id='appointmentform' action='processgrooming.php' method='post'>
+    <form id='appointmentform' action='processgrooming.php' method='post' onsubmit= 'return apptValidate()'>
     <label for='firstname'>First Name:</label><br>
     <input type='text' id='firstname'name='firstname' size='15' placeholder="Enter First Name" required><br>
     

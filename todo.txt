@@ -1,7 +1,6 @@
 - Contact Us doesnt send mail...Reactivater ajax call once solved
 - Grooming Validation  does not work
 - Extra CSS Styling
-- Media Queries
 - Admin: validation on add appointment and edit appointment?
 - Populate Altered selection on Edit form
 

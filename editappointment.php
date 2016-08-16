@@ -43,7 +43,7 @@ $value = mysqli_fetch_assoc($result);
 
 <div id='formcontent'>
 <h1>Edit Appointment</h1>
-<form id='editappointmentform' action='updategrooming.php' method='post'>
+<form id='editappointmentform' action='updategrooming.php' method='post' onsubmit='return apptValidate()'>
     <input type="hidden" name="GroomingID" value= <?php echo $value['GroomingID']?> >
     
     <label for='firstname'>First Name:</label><br>
