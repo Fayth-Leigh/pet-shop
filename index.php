@@ -34,8 +34,6 @@
            <li>Extra Long Brushing Sessions</li>
            <li>Nail Trimming</li><br>
        </ul>
-       <!--Maybe add additional content here
-       <p>We employ </p>-->
     </section>
     
     <section id='teddy'>

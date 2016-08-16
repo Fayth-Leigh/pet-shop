@@ -165,7 +165,8 @@ $result = mysqli_query ($connect,$select);
     <input type='text' id='petname' name='petname' size='20' placeholder='Enter Pets Name' required><br>
     
     <label for='altered'>Spayed or Neutered?</label>
-    <input type='checkbox' value='Yes' name='altered' id='altered'><br>
+    <input type='checkbox' value='Yes' name='altered' id='altered'>Yes
+    <input type='checkbox' value='No' name='altered' id='altered'>No<br>
     
     <label for='petage'>Pet's Age:</label><br>
     <input type='text' id='petage' name='petage' size='15' placeholder='Enter Pets Age'><br>

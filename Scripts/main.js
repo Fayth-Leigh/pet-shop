@@ -17,7 +17,7 @@ function apptValidate() {
     var reCity = /^([A-Za-z']+ )*[A-Za-z']+$/;
     var reState = /^[A-Z]{2}$/;
     var reZip = /^\d{5}(\-\d{4})?$/;
-    var rePhone = /^\(?([2-9]\d\d)\)?[\-\. ]?([2-9]\d\d)[\-\. ]?(\d{4})$/;
+    var rePhone = /^(1\s*[-\/\.]?)?(\((\d{3})\)|(\d{3}))\s*[-\/\.]?\s*(\d{3})\s*[-\/\.]?\s*(\d{4})\s*(([xX]|[eE][xX][tT])\.?\s*(\d+))*$/;
     var rePetName = /^([A-Za-z']+ )*[A-Za-z']+$/;
       
     var firstname = $('#firstname').val();
@@ -38,15 +38,15 @@ function apptValidate() {
         }
 
    if (!reFirstName.test(firstname)) {
-            errors[errors.length] = 'You must enter a valid  firstname.';
+            errors[errors.length] = 'You must enter a valid  first name.';
         }
 
    if (!reLastName.test(lastname)) {
-        errors[errors.length] = 'You must enter a valid lastname.';
+        errors[errors.length] = 'You must enter a valid last name.';
         }
 
     if (!reCity.test(city)) {
-        errors[errors.length] = 'You must enter an address.';
+        errors[errors.length] = 'You must enter a city.';
         }  
         
     if (!reAddress.test(address)) {
@@ -62,7 +62,7 @@ function apptValidate() {
         }
         
    if (!rePhone.test(phone)) {
-            errors[errors.length] = 'You must enter valid phone number.';
+            errors[errors.length] = 'You must enter a valid phone number.';
         }
     
    if (!rePetName.test(petname)) {

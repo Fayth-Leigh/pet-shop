@@ -14,6 +14,7 @@
 <link href='CSS/main.css' rel='stylesheet' type="text/css">
 <script type="text/javascript">
 
+//Sumbit the form with Ajax plugin
 $(document).ready(function() {
     $('#submit').click(function(){
     $('#contactform').ajaxForm(function(form){

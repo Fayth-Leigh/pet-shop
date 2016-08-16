@@ -13,10 +13,10 @@
     display: none;
     text-decoration: none;
     color: white;
-    font-size: 40px;
+    font-size: 35px;
     background-color: mediumpurple;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
 
 }
 
@@ -27,7 +27,7 @@
 
 #mainmenu li {
     display: block;
-    width: 25%;
+    width: 20%;
     float: left;
 }
 
@@ -321,6 +321,7 @@
       
 #mainmenu li {
     float: none;
+    width: 40%;
     }
     
 #footer {
