@@ -1,7 +1,7 @@
+<!DOCTYPE HTML>
 <?php
     $pgTitle = 'Login';
 ?>
-<!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="utf-8">
@@ -44,7 +44,7 @@
 </div>
 
 <!--Login Form-->
-<div id='formcontent'>
+<section id='formcontent'>
     <h1>Login Form</h1>
     <form id='loginform' method='post' action='login.php'>
         <input type="hidden" name='LoggingIn' value='true'>
@@ -57,8 +57,9 @@
         <input type='password' name='password' id='password' size='20' placeholder="Password">
         <br>
         <input type='submit' value='Log In'>
-    </form>
-</div>
+    </form><br>
+</section>
+
 <!--Footer-->
 <footer class='footer'>
     <?php

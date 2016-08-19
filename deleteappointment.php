@@ -3,7 +3,7 @@
 $groomingID= $_POST['GroomingID'];
     
 //Connect to Database 
-$connect = mysqli_connect ('localhost', 'root','', 'pet_shop');
+$connect = mysqli_connect ('localhost', 'root', 'pwdpwd', 'pet_shop');
 
 //Check Connection
 if (mysqli_connect_errno()) {

@@ -1,7 +1,7 @@
+<!DOCTYPE HTML>
 <?php
     $pgTitle = 'Admin';
 ?>
-<!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="utf-8">
@@ -19,6 +19,7 @@
     $('#breed').css('visibility', 'visible');
     });
    
+   //Sumbit the forms with Ajax plugin
    $('#submit').click(function(){
         $('#addappointmentform').ajaxForm(function(form){
        window.location.reload();
@@ -44,7 +45,7 @@
 
 <?php
 //Connect to Database 
-$connect = mysqli_connect ('localhost', 'root','', 'pet_shop');
+$connect = mysqli_connect ('localhost', 'root', 'pwdpwd', 'pet_shop');
 
 //Check Connection
 if (mysqli_connect_errno()) {
@@ -58,7 +59,7 @@ $result = mysqli_query ($connect,$select);
 
 <!--Main Content-->
 <div class='maincontent'>
-    <table id='admintable'>
+      <table id='admintable'>
         <tr>
             <th>Grooming ID</th>
             <th>First Name</th>
@@ -114,7 +115,7 @@ $result = mysqli_query ($connect,$select);
 
 
 <!--Grooming Form-->
-<div id='formcontent'>
+<section id='formcontent'>
     <h1>Add Appointment</h1>
     
 <form id='addappointmentform' action='processgrooming.php' method='post' onsubmit='return apptValidate()'>
@@ -131,7 +132,7 @@ $result = mysqli_query ($connect,$select);
     <input type="text" id='city' name="city" size="15" placeholder='Enter City' required><br>
         
     <label for='state'>State:</label><br>
-    <input type="text" id='state' name='state' size="2" placeholder='Enter ST' required><br>
+    <input type="text" id='state' name='state' size="2" placeholder='ST' required><br>
    
     <label for='zip'>Zip Code:</label><br>
     <input type="text" id='zip' name="zip" size="10" placeholder='Enter Zip' required><br> 
@@ -144,7 +145,7 @@ $result = mysqli_query ($connect,$select);
     
     <label for='typeofpet'>Type of Pet:</label><br>
     <select id='typeofpet' name="typeofpet" size="1" required>
-        <option selected='selected' value='Cat'>Cat</option>
+        <option value='Cat'>Cat</option>
         <option value='Dog'>Dog</option>
         </select>  
         
@@ -165,8 +166,8 @@ $result = mysqli_query ($connect,$select);
     <input type='text' id='petname' name='petname' size='20' placeholder='Enter Pets Name' required><br>
     
     <label for='altered'>Spayed or Neutered?</label>
-    <input type='checkbox' value='Yes' name='altered' id='altered'>Yes
-    <input type='checkbox' value='No' name='altered' id='altered'>No<br>
+    <input type='checkbox' value='Yes' name='altered'>Yes
+    <input type='checkbox' value='No' name='altered'>No<br>
     
     <label for='petage'>Pet's Age:</label><br>
     <input type='text' id='petage' name='petage' size='15' placeholder='Enter Pets Age'><br>
@@ -174,9 +175,9 @@ $result = mysqli_query ($connect,$select);
    <br><input id='submit' id="submit" name="submit" type="submit" value="Add">
 	   <input name="reset" type="reset" value="Reset Form">
 
-</form>
+</form><br>
 
-</div>
+</section>
 
 <!--Footer--> 
 <footer class='footer'>

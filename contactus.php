@@ -1,7 +1,7 @@
+<!DOCTYPE HTML>
 <?php
     $pgTitle = 'Contact Sandys Pet Shop';
 ?>
-<!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="utf-8">
@@ -34,7 +34,7 @@ $(document).ready(function() {
  </header>
 
 <!--Contact Us Form-->
-<div id='formcontent'>
+<section id='formcontent'>
     <h1>Contact Us</h1>
 <form id='contactform' method='post' action='mailer.php' onsubmit='return contactValidate()'>
     <label for='firstname'>First Name:</label><br>
@@ -43,12 +43,12 @@ $(document).ready(function() {
     <input type='text' id='lastname' name='lastname' size='15' placeholder="Enter Last Name"><br>
     <label for='email'>Email:</label><br>
     <input type='email' name='email' id='email' size='15' placeholder="Enter Your Email"><br>
-    <label for='message'>Message:</label><br>
-    <textarea id='comments' name='comments' cols='20%' rows='5%' placeholder='Comments or Questions'></textarea><br>
+    <label for='comments'>Message:</label><br>
+    <textarea id='comments' name='comments' cols='20' rows='5' placeholder='Comments or Questions'></textarea><br>
     <input id='submit' name="submit" type="submit" value="Submit">
 	<input name="reset" type="reset" value="Reset Form">
-</form>
-</div>
+</form><br>
+</section>
 <div id='form-messages'></div>
  
 <!--Footer--> 

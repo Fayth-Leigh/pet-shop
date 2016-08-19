@@ -1,8 +1,7 @@
+<!DOCTYPE HTML>
 <?php 
 $pgTitle = 'Edit Appointment';
 ?>
-
-<!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="utf-8">
@@ -27,7 +26,7 @@ $pgTitle = 'Edit Appointment';
 $groomingID= $_POST['GroomingID'];
 
 //Connect to Database 
-$connect = mysqli_connect ('localhost', 'root','', 'pet_shop');
+$connect = mysqli_connect ('localhost', 'root', 'pwdpwd', 'pet_shop');
 
 //Check Connection
 if (mysqli_connect_errno()) {
@@ -41,7 +40,7 @@ $result = mysqli_query ($connect,$select);
 $value = mysqli_fetch_assoc($result);
 ?> 
 
-<div id='formcontent'>
+<section id='formcontent'>
 <h1>Edit Appointment</h1>
 <form id='editappointmentform' action='updategrooming.php' method='post' onsubmit='return apptValidate()'>
     <input type="hidden" name="GroomingID" value= <?php echo $value['GroomingID']?> >
@@ -95,21 +94,21 @@ $value = mysqli_fetch_assoc($result);
     <input type='text' id='petname' name='petname' size='20'  value = "<?php echo $value['PetName']?>" required><br>
     
     <label for='altered'>Spayed or Neutered?</label>
-    <input type='checkbox' value='Yes' name='altered' id='altered'>Yes
-    <input type='checkbox' value='No' name='altered' id='altered'>No<br>
+    <input type='checkbox' value='Yes' name='altered'>Yes
+    <input type='checkbox' value='No' name='altered'>No<br>
     
     <label for='petage'>Pet's Age:</label><br>
     <input type='text' id='petage' name='petage' size='20'  value = <?php echo $value['PetBirthday'] ?>><br>
     
    <br><input id='submit' id="submit" name="submit" type="submit" value="Update">
 	   <input name="reset" type="reset" value="Reset Form">
-</form>
+</form><br>
 
 <?php  
   mysqli_close($connect);
 ?>
 
-</div>
+</section>
   
 
 <!--Footer--> 

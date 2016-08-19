@@ -1,8 +1,7 @@
+<!DOCTYPE HTML>
 <?php
     $pgTitle = 'Sandys Pet Shop';
 ?>
-
-<!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="utf-8">
@@ -25,19 +24,20 @@
 <div class='maincontent'>
     <section id='overview'>
        <h1>Welcome to Sandy's Pet Shop!!!</h1><br>
-       <p>Sandy's Pet Shop offfers a wide variety of services to get and keep your pet looking good. We welcome cats and dogs, all breeds and coat types. We are able to handle any age pet, but preffer that puppies be vaccinated and over six months.  Please feel free contact us with questions or to make a grooming appointment to get your pet the spa day they deserve!!</p><br>
+       <p>Sandy's Pet Shop offers a wide variety of services to get and keep your pet looking great. We welcome cats and dogs, all breeds and coat types. We are able to handle any age pet, but preffer that puppies be vaccinated and over six months.  Please feel free contact us with questions or to make a grooming appointment to get your pet the spa day they deserve!!</p><br>
        
-       <ul><h1>Services</h1><br>
+       <h1>Services<br></h1>
+       <ul>
            <li>Bathing</li>
            <li>Coat Trims</li>
            <li>De-fur Brushing</li>
            <li>Extra Long Brushing Sessions</li>
-           <li>Nail Trimming</li><br>
+           <li>Nail Trimming</li>
        </ul>
     </section>
     
     <section id='teddy'>
-        <p>Meet Teddy!!!! Teddy is our unofficial mascot of Sandy's Pet Shop.</p>
+        <h1>Meet Teddy, our unofficial mascot.</h1><br>
         <img src='Images/teddy.jpg' alt="Teddy">        
     </section>
 </div>

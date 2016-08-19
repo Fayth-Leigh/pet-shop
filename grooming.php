@@ -1,7 +1,7 @@
+<!DOCTYPE HTML>
 <?php
     $pgTitle = 'Grooming Appointment';
 ?>
-<!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="utf-8">
@@ -43,15 +43,16 @@ $(document).ready(function(){
 
 <div class='maincontent'>
     <section id='overview'>
-        <h1>Grooming Services</h1>
+        <h1>Grooming Services</h1><br>
         <p>We offer several different services to get your pet looking its best! Prices are based on breed and pet size.</p><br>
         
-        <ul><h1>Services</h1>
+        <h1>Services</h1><br>
+        <ul>
             <li>Bathing: Get your pet washed in luxury with non-irritating oatmeal shampoos.</li>
             <li>Coat Trims: We can offer several types of coat cuts ranging from summer buzzing to traditional poodle cuts.</li>
-            <li>De-fur Brushing:  If you have a shaggy dog, we used defurinators to remove dead hair and shedding undercoats.</li>
-            <li>We also offer extra long brushing sessions to make help cut down on your pet's shedding after thier bath</li>
-            <li>Nail Trimming: We offer to trims your pet's nails to keep them at a safe length</li>
+            <li>De-fur Brushing:  If you have a shaggy dog, we use shedding brushes to remove dead hair and shedding undercoats.</li>
+            <li>We also offer extra long brushing sessions to make help cut down on your pet's shedding after thier bath.</li>
+            <li>Nail Trimming: We offer to trim your pet's nails to keep them at a safe length.</li>
         </ul>
     </section>
     <div id='output'></div>
@@ -62,7 +63,7 @@ $(document).ready(function(){
     
     <form id='appointmentform' action='processgrooming.php' method='post' onsubmit= 'return apptValidate()'>
     <label for='firstname'>First Name:</label><br>
-    <input type='text' id='firstname'name='firstname' size='15' placeholder="Enter First Name" required><br>
+    <input type='text' id='firstname' name='firstname' size='15' placeholder="Enter First Name" required><br>
     
     <label for='lastname'>Last Name:</label><br>
     <input type='text' id='lastname' name='lastname' size='15' placeholder="Enter Last Name" required><br>
@@ -87,7 +88,7 @@ $(document).ready(function(){
     
     <label for='typeofpet'>Type of Pet:</label><br>
     <select id='typeofpet' name="typeofpet" size="1" required>
-        <option selected='selected' value='Cat'>Cat</option>
+        <option value='Cat'>Cat</option>
         <option value='Dog'>Dog</option>
         </select>  
         
@@ -108,8 +109,8 @@ $(document).ready(function(){
     <input type='text' id='petname' name='petname' size='15' placeholder='Enter Pets Name' required><br>
     
     <label for='altered'>Spayed or Neutered?</label>
-    <input type='checkbox' value='Yes' name='altered' id='altered'>Yes
-    <input type='checkbox' value='No' name='altered' id='altered'>No<br>
+    <input type='checkbox' value='Yes' name='altered'>Yes
+    <input type='checkbox' value='No' name='altered'>No<br>
     
     <label for='petage'>Pet's Age:</label><br>
     <input type='text' id='petage' name='petage' size='15' placeholder='Enter Pets Age'><br>
