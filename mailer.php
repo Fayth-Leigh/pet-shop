@@ -17,8 +17,8 @@ $mail->Host = 'smtp.gmail.com';
 $mail->Port = 587;
 $mail->SMTPSecure = 'tls';
 $mai->SMTPAuth = true;
-$mail->Username = "wperrine04@gmail.com";
-$mail->Password = "wOMBAT85!";
+$mail->Username = "USERNAME";//Ommitted on purpose
+$mail->Password = "PASSWORD";//Ommitted on purpose
 
 
 $mail->SetFrom("$from", "$fromName");
